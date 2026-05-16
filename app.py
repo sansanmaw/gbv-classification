@@ -294,7 +294,7 @@ with t1:
         key='narrative'
     )
 
-    col_btn, _ = st.columns([3, 1])
+    col_btn, _ = st.columns([3, 3])
     with col_btn:
         analyze_clicked = st.button('🔍 Analyze Case', type='primary', use_container_width=True)
 
