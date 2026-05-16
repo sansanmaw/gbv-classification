@@ -12,7 +12,7 @@ from datetime import datetime
 ARTIFACT_DIR = 'gbv_mtl_roberta_model'
 
 MODEL_SOURCES = {
-    "MTL RoBERTa (Main)": {
+    "MTL RoBERTa": {
         "type":          "local",
         "path":          ARTIFACT_DIR,
         "has_intensity": True,
