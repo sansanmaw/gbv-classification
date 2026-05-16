@@ -6,4 +6,6 @@ scikit-learn
 pandas
 numpy
 openpyxl
-google-generativeai
+groq
+huggingface_hub
+supabase
