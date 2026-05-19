@@ -12,7 +12,7 @@ from datetime import datetime
 ARTIFACT_DIR = 'gbv_mtl_roberta_model'
 
 MODEL_SOURCES = {
-    "Baseline Model (RoBERTa)": {
+    "Baseline Model": {
         "type":          "hub",
         "repo_id":       "sansanmaw/gbv-baseline-model",
         "has_intensity": False,
