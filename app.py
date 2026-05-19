@@ -236,14 +236,21 @@ st.markdown("""
     .stProgress > div > div { border-radius: 6px; }
     .stTabs [data-baseweb="tab-list"] { gap: 8px; }
     .stTabs [data-baseweb="tab"] { padding: 8px 20px; border-radius: 6px 6px 0 0; }
+    
     .ethical-note {
+        /* Use Streamlit's internal theme variables */
         background-color: var(--secondary-background-color);
         color: var(--text-color);
-        border-left: 4px solid #f9a825; /* Keeps the amber warning line */
-        padding: 10px 14px;
-        border-radius: 4px;
-        font-size: 0.85rem;
-        margin-bottom: 1rem;
+        
+        /* This creates a semi-transparent border to ensure it's visible on any background */
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-left: 5px solid #f9a825; /* The amber warning strip */
+        
+        padding: 12px 16px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
     }
 </style>
 """, unsafe_allow_html=True)
