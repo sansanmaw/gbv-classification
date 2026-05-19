@@ -238,19 +238,13 @@ st.markdown("""
     .stTabs [data-baseweb="tab"] { padding: 8px 20px; border-radius: 6px 6px 0 0; }
     
     .ethical-note {
-        /* Use Streamlit's internal theme variables */
-        background-color: var(--secondary-background-color);
-        color: var(--text-color);
-        
-        /* This creates a semi-transparent border to ensure it's visible on any background */
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        border-left: 5px solid #f9a825; /* The amber warning strip */
-        
-        padding: 12px 16px;
-        border-radius: 8px;
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.4;
+        background-color: rgba(249, 168, 37, 0.1) !important; /* Soft 10% amber background */
+        color: inherit !important;                            /* Automatically adapts text color to theme */
+        border-left: 4px solid #f9a825;                       /* Solid amber accent bar */
+        padding: 10px 14px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
     }
 </style>
 """, unsafe_allow_html=True)
