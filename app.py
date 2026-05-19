@@ -336,7 +336,7 @@ with t1:
                 st.markdown(f"{sicon} **Severity:** {r['int_label']}   &nbsp;&nbsp; 🎯 **Confidence:** {r['top_confidence']*100:.1f}%")
             else:
                 st.markdown(f"🎯 **Confidence:** {r['top_confidence']*100:.1f}%")
-                st.caption("Severity scoring is only available with MTL RoBERTa.")
+                st.caption("Intensity scoring is only available with MTL RoBERTa.")
 
             st.markdown("---")
             st.markdown("**Model Confidence Across All Classes**")
