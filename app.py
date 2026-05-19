@@ -17,7 +17,7 @@ MODEL_SOURCES = {
         "repo_id":       "sansanmaw/gbv-baseline-model",
         "has_intensity": False,
     },
-    "MTL RoBERTa Model": {
+    "MTL RoBERTa": {
         "type":          "local",
         "path":          ARTIFACT_DIR,
         "has_intensity": True,
