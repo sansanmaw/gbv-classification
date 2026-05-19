@@ -259,7 +259,7 @@ with st.sidebar:
     if not has_intensity:
         st.info("Baseline model shows GBV type only. Switch to MTL RoBERTa for intensity scoring.")
     st.divider()
-    st.caption("GBV Case Management Dashboard\nCapstone Project")
+    st.caption("GBV Case Management Dashboard\n | Capstone Project")
 
 tokenizer, model, mappings = load_model(selected_model)
 
@@ -284,7 +284,7 @@ t1, t2 = st.tabs(["📝 Single Case Assessment", "📂 Batch File Analysis"])
 # ══════════════════════════════════════════════
 with t1:
     st.markdown("### Incident Narrative")
-    st.caption("Enter the incident text below. The model will classify the GBV type and provide casework guidance.")
+    st.caption("Enter the incident text (tweets) below. The model will classify the GBV type and provide casework guidance.")
 
     user_input = st.text_area(
         label='Incident Narrative',
