@@ -443,4 +443,4 @@ with t2:
             st.error(f"Error reading file: {e}")
 
 st.markdown("---")
-st.caption("GBV Case Management Dashboard · Built for humanitarian and community workers · Capstone Project")
+st.caption("GBV Case Management Dashboard | Built for humanitarian and community workers | Capstone Project")
