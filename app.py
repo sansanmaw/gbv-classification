@@ -237,8 +237,9 @@ st.markdown("""
     .stTabs [data-baseweb="tab-list"] { gap: 8px; }
     .stTabs [data-baseweb="tab"] { padding: 8px 20px; border-radius: 6px 6px 0 0; }
     .ethical-note {
-        background: #fff8e1;
-        border-left: 4px solid #f9a825;
+        background-color: var(--secondary-background-color);
+        color: var(--text-color);
+        border-left: 4px solid #f9a825; /* Keeps the amber warning line */
         padding: 10px 14px;
         border-radius: 4px;
         font-size: 0.85rem;
@@ -268,7 +269,6 @@ st.markdown("## 🛡️ GBV Case Management Dashboard")
 st.markdown("*An AI-assisted tool to support humanitarian and community workers handling Gender-Based Violence cases.*")
 st.markdown("""
 <div class="ethical-note">
-st.warning("**Notice:** This tool uses AI to assist with case classification and is intended to support — not replace — professional judgment. Always verify the classification and apply your own expertise before taking action.")
 ⚠️ <strong> Notice :</strong> This tool uses AI to assist with case classification and is intended to support - not replace - professional judgment.
 Always verify the classification and apply your own expertise before taking action.
 </div>
