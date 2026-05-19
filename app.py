@@ -268,6 +268,7 @@ st.markdown("## 🛡️ GBV Case Management Dashboard")
 st.markdown("*An AI-assisted tool to support humanitarian and community workers handling Gender-Based Violence cases.*")
 st.markdown("""
 <div class="ethical-note">
+st.warning("**Notice:** This tool uses AI to assist with case classification and is intended to support — not replace — professional judgment. Always verify the classification and apply your own expertise before taking action.")
 ⚠️ <strong> Notice :</strong> This tool uses AI to assist with case classification and is intended to support - not replace - professional judgment.
 Always verify the classification and apply your own expertise before taking action.
 </div>
