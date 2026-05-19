@@ -12,15 +12,15 @@ from datetime import datetime
 ARTIFACT_DIR = 'gbv_mtl_roberta_model'
 
 MODEL_SOURCES = {
-    "MTL RoBERTa": {
-        "type":          "local",
-        "path":          ARTIFACT_DIR,
-        "has_intensity": True,
-    },
     "Baseline Model": {
         "type":          "hub",
         "repo_id":       "sansanmaw/gbv-baseline-model",
         "has_intensity": False,
+    },
+    "MTL RoBERTa": {
+        "type":          "local",
+        "path":          ARTIFACT_DIR,
+        "has_intensity": True,
     },
 }
 
@@ -257,7 +257,7 @@ with st.sidebar:
     )
     has_intensity = MODEL_SOURCES[selected_model]["has_intensity"]
     if not has_intensity:
-        st.info("Baseline model shows GBV type only. Switch to MTL RoBERTa for severity scoring.")
+        st.info("Baseline model shows GBV type only. Switch to MTL RoBERTa for intensity scoring.")
     st.divider()
     st.caption("GBV Case Management Dashboard\nCapstone Project")
 
@@ -268,7 +268,7 @@ st.markdown("## 🛡️ GBV Case Management Dashboard")
 st.markdown("*An AI-assisted tool to support humanitarian and community workers handling Gender-Based Violence cases.*")
 st.markdown("""
 <div class="ethical-note">
-⚠️ <strong>Ethical Consideration:</strong> This tool uses AI to assist with case classification and is intended to support — not replace — professional judgment.
+⚠️ <strong> Notice :</strong> This tool uses AI to assist with case classification and is intended to support — not replace — professional judgment.
 Always verify the classification and apply your own expertise before taking action.
 </div>
 """, unsafe_allow_html=True)
